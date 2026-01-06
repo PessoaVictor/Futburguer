@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cardápio completo do Futburguer - Hambúrgueres e Hot Dogs">
+    <title>Cardápio - Futburguer</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/menu-page.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main class="menu-page">
+        <div class="menu-page-hero">
+            <div class="container">
+                <h1 class="menu-page-title">Cardápio Completo</h1>
+                <p class="menu-page-subtitle">Escolha seus favoritos e monte seu pedido campeão!</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-border-all"></i> Todos
+                </button>
+                <button class="filter-btn" data-filter="hamburgueres">
+                    <i class="fas fa-burger"></i> Hambúrgueres
+                </button>
+                <button class="filter-btn" data-filter="hotdogs">
+                    <i class="fas fa-hotdog"></i> Hot Dogs
+                </button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" data-category="hamburgueres" data-id="1" data-name="Brasil" data-price="29.99">
+                    <div class="menu-item-badge">
+                        <i class="fas fa-fire"></i> Mais Vendido
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/Brazil.png" alt="Brasil Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3><span class="fi fi-br"></span> Brasil</h3>
+                            <span class="price">R$ 29,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 2 blends de 120g, cream cheese, ovo e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="2" data-name="Argentina" data-price="14.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/Argentina.png" alt="Argentina Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3><span class="fi fi-ar"></span> Argentina</h3>
+                            <span class="price">R$ 14,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 1 blend de 150g, queijo mussarela, onion rings e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="3" data-name="França" data-price="16.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/Franca.png" alt="França Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3><span class="fi fi-fr"></span> França</h3>
+                            <span class="price">R$ 16,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, frango em cubos, queijo mussarela, creme de milho e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="4" data-name="México" data-price="15.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/Mexico.png" alt="México Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3><span class="fi fi-mx"></span> México</h3>
+                            <span class="price">R$ 15,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 1 blend de 150g, queijo mussarela, bacon, ovo e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="5" data-name="Itália" data-price="29.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/Italia.png" alt="Itália Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3><span class="fi fi-it"></span> Itália</h3>
+                            <span class="price">R$ 29,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, 1 blend de 150g, queijo mussarela, camarão, cream cheese maçaricado, maionese e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="6" data-name="Messi" data-price="25.99">
+                    <div class="menu-item-badge" style="background: var(--accent-gold);">
+                        <i class="fas fa-crown"></i> Craque
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/messi.png" alt="Messi Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Messi</h3>
+                            <span class="price">R$ 25,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 1 blend de 150g, cream cheese, bacon, onion rings e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="7" data-name="Ronaldo Fenômeno" data-price="25.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/ronaldo.png" alt="Ronaldo Fenômeno Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Ronaldo Fenômeno</h3>
+                            <span class="price">R$ 25,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 1 blend de 150g, cheddar, geleia de bacon e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="8" data-name="Cristiano Ronaldo" data-price="29.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/cristiano-ronaldo.png" alt="Cristiano Ronaldo Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Cristiano Ronaldo</h3>
+                            <span class="price">R$ 29,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 1 blend de 150g, charque desfiada, queijo coalho e molho barbecue
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="9" data-name="Pelé" data-price="29.99">
+                    <div class="menu-item-badge" style="background: var(--accent-gold);">
+                        <i class="fas fa-crown"></i> Craque
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/pele.png" alt="Pelé Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Pelé</h3>
+                            <span class="price">R$ 29,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, frango em cubos, mussarela, filé de camarão, molho cheddar e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="10" data-name="Maradona" data-price="29.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/maradona.png" alt="Maradona Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Maradona</h3>
+                            <span class="price">R$ 29,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 150g de carne de sol, queijo coalho, mel de engenho e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hamburgueres" data-id="11" data-name="Neymar" data-price="29.99">
+                    <div class="menu-item-image">
+                        <img src="assets/images/neymar.png" alt="Neymar Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Neymar</h3>
+                            <span class="price">R$ 29,99</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão brioche, maionese da casa, 1 blend de 150g, ovo, bacon, calabresa e salada
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hotdogs" data-id="12" data-name="Santa Cruz" data-price="0">
+                    <div class="menu-item-badge" style="background: #f44336;">
+                        <i class="fas fa-shield-halved"></i> Hot Dog
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/santa-cruz.png" alt="Santa Cruz Hot Dog">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Santa Cruz</h3>
+                            <span class="price">Consulte</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão amanteigado, salsicha, carne moída, maionese, purê, bacon, mussarela maçaricada, ovo de codorna, tomate e cebola
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hotdogs" data-id="13" data-name="Sport" data-price="0">
+                    <div class="menu-item-badge" style="background: #f44336;">
+                        <i class="fas fa-shield-halved"></i> Hot Dog
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/sport.png" alt="Sport Hot Dog">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Sport</h3>
+                            <span class="price">Consulte</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão amanteigado, salsicha, carne moída, maionese, purê, calabresa, mussarela maçaricada, ovo de codorna, tomate e cebola
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hotdogs" data-id="14" data-name="Náutico" data-price="0">
+                    <div class="menu-item-badge" style="background: #f44336;">
+                        <i class="fas fa-shield-halved"></i> Hot Dog
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/nautico.png" alt="Náutico Hot Dog">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Náutico</h3>
+                            <span class="price">Consulte</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão amanteigado, salsicha, carne moída, maionese, purê, frango, bacon, mussarela maçaricada, ovo de codorna, tomate e cebola
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hotdogs" data-id="15" data-name="Flamengo" data-price="0">
+                    <div class="menu-item-badge" style="background: #f44336;">
+                        <i class="fas fa-shield-halved"></i> Hot Dog
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/flamengo.png" alt="Flamengo Hot Dog">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Flamengo</h3>
+                            <span class="price">Consulte</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão amanteigado, salsicha, carne moída, maionese, purê, charque, mussarela maçaricada, ovo de codorna, tomate e cebola
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hotdogs" data-id="16" data-name="Corinthians" data-price="0">
+                    <div class="menu-item-badge" style="background: #f44336;">
+                        <i class="fas fa-shield-halved"></i> Hot Dog
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/corinthians.png" alt="Corinthians Hot Dog">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Corinthians</h3>
+                            <span class="price">Consulte</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão amanteigado, salsicha, carne moída, maionese, purê, carne de sol, mussarela maçaricada, ovo de codorna, tomate e cebola
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hotdogs" data-id="17" data-name="Palmeiras" data-price="0">
+                    <div class="menu-item-badge" style="background: #f44336;">
+                        <i class="fas fa-shield-halved"></i> Hot Dog
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="assets/images/palmeiras.png" alt="Palmeiras Hot Dog">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Palmeiras</h3>
+                            <span class="price">Consulte</span>
+                        </div>
+                        <p class="menu-item-description">
+                            Pão amanteigado, salsicha, carne moída, maionese, purê, camarão, mussarela maçaricada, ovo de codorna, tomate e cebola
+                        </p>
+                        <div class="menu-item-footer">
+                            <button class="btn btn-sm btn-primary add-to-cart">
+                                <i class="fas fa-plus"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    
+    <a href="cart.html" class="floating-cart" id="floatingCart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge" id="floatingCartCount">0</span>
+    </a>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/pages/menu-page.js" type="module"></script>
+</body>
+</html>

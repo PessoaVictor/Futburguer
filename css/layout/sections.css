@@ -47,71 +47,9 @@
     margin: 0 auto;
 }
 
-.contact {
-    padding: 5rem 0;
-}
-
-.contact-content {
-    display: grid;
-    gap: 3rem;
-}
-
-.contact-description {
-    font-size: 1.125rem;
-    color: var(--gray-600);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-}
-
-.contact-items {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.contact-item {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.contact-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--gradient-primary);
-    border-radius: var(--border-radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--white);
-    flex-shrink: 0;
-}
-
-.contact-item h4 {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: 0.5rem;
-}
-
-.contact-item p {
-    color: var(--gray-600);
-    line-height: 1.6;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
 @media (min-width: 768px) {
     .container {
         padding: 0 40px;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr 1fr;
     }
 }
 

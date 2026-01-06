@@ -111,6 +111,26 @@
     font-size: 0.875rem;
 }
 
+.footer-bottom p {
+    margin: 0.5rem 0;
+}
+
+.footer-credits {
+    color: var(--gray-400);
+    font-size: 0.813rem;
+}
+
+.footer-credits a {
+    color: var(--secondary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.footer-credits a:hover {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
