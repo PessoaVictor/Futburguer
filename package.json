@@ -1,0 +1,27 @@
+{
+  "name": "futburguer-website",
+  "version": "2.0.0",
+  "description": "Website oficial do Futburguer - Hambúrgueres Artesanais",
+  "author": "Futburguer Team",
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futburguer/website"
+  },
+  "keywords": [
+    "hamburgueria",
+    "futburguer",
+    "food",
+    "delivery",
+    "olinda",
+    "pernambuco"
+  ],
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/",
+    "build": "echo 'Build script here'",
+    "deploy": "echo 'Deploy script here'"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
