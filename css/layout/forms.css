@@ -186,10 +186,61 @@
     
     .contact-info-group {
         border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+        padding: 2.5rem 2rem;
     }
     
     .contact-cta {
         border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-content {
+        padding: 0 1rem;
+    }
+    
+    .contact-info-group {
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .info-item i {
+        font-size: 1.5rem;
+        width: 40px;
+    }
+    
+    .info-text strong {
+        font-size: 1.1rem;
+    }
+    
+    .info-text span {
+        font-size: 0.9rem;
+    }
+    
+    .contact-cta {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-cta h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .contact-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 

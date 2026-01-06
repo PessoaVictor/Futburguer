@@ -151,6 +151,52 @@
     font-size: 1rem;
 }
 
+@media (max-width: 640px) {
+    .menu {
+        padding: 3rem 0;
+    }
+    
+    .menu-filters {
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    .filter-btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .menu-grid {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .menu-item-image {
+        height: 200px;
+    }
+    
+    .menu-item-content {
+        padding: 1.25rem;
+    }
+    
+    .menu-item-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .price {
+        font-size: 1.25rem;
+    }
+    
+    .menu-item-description {
+        font-size: 0.85rem;
+    }
+    
+    .menu-item-badge {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.7rem;
+    }
+}
+
 @media (min-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);

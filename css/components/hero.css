@@ -151,6 +151,71 @@
     animation: float 3s ease-in-out infinite;
 }
 
+@media (max-width: 640px) {
+    .hero {
+        padding-top: 60px;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .hero-content {
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-item {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        height: 300px;
+    }
+    
+    .hero-logo-image {
+        width: 280px;
+    }
+    
+    .floating-badge {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.85rem;
+    }
+    
+    .floating-badge i {
+        font-size: 1rem;
+    }
+}
+
 @media (min-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr 1fr;

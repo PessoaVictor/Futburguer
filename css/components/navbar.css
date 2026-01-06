@@ -227,6 +227,68 @@
     gap: 2rem;
 }
 
+@media (max-width: 640px) {
+    .navbar {
+        padding: 0 0.5rem;
+    }
+    
+    .nav-wrapper {
+        padding: 0.75rem 0;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .logo-container {
+        margin: 0 0.5rem;
+    }
+    
+    .logo-text-curved {
+        font-size: 1.3rem;
+    }
+    
+    .logo-text-outline {
+        font-size: 1.3rem;
+    }
+    
+    .logo i {
+        font-size: 2rem;
+    }
+    
+    .nav-menu.active {
+        width: 100%;
+        padding: 80px 20px;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 0.75rem 0;
+    }
+    
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .nav-auth {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .nav-auth .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cart-link {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem;
+    }
+}
+
 @media (min-width: 768px) {
     .hamburger {
         display: none;

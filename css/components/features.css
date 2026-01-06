@@ -55,12 +55,20 @@
 
 .about-content {
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .about-image-wrapper {
     position: relative;
+    width: 100%;
+    max-width: 500px;
 }
 
 .about-badge {
@@ -97,17 +105,30 @@
 .image-placeholder-large {
     height: 400px;
     border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-text {
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-text .section-badge {
+    align-self: flex-start;
+}
+
+.about-text .section-title {
+    margin-bottom: 0.5rem;
 }
 
 .about-description {
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--gray-700);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about-features {
@@ -121,6 +142,14 @@
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.about-feature-item:hover {
+    background: rgba(26, 95, 62, 0.05);
+    transform: translateX(5px);
 }
 
 .feature-number {
@@ -222,6 +251,68 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .about {
+        padding: 3rem 0;
+    }
+    
+    .about-content {
+        gap: 2rem;
+    }
+    
+    .about-image-wrapper {
+        max-width: 100%;
+    }
+    
+    .about-badge {
+        position: static;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    
+    .about-badge i {
+        font-size: 2rem;
+    }
+    
+    .about-badge strong {
+        font-size: 1.1rem;
+    }
+    
+    .image-placeholder-large {
+        height: 280px;
+    }
+    
+    .about-text {
+        text-align: center;
+    }
+    
+    .about-text .section-badge {
+        align-self: center;
+    }
+    
+    .about-description {
+        font-size: 1rem;
+    }
+    
+    .about-feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .feature-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .about-text .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) {
