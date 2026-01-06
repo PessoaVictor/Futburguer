@@ -1,7 +1,5 @@
-// Authentication Pages JavaScript
 import { loginUser, registerUser, resetPassword, loginWithGoogle } from '../services/auth-service.js';
 
-// Toggle password visibility
 document.querySelectorAll('.toggle-password').forEach(button => {
     button.addEventListener('click', function() {
         const input = this.parentElement.querySelector('input');
@@ -19,7 +17,6 @@ document.querySelectorAll('.toggle-password').forEach(button => {
     });
 });
 
-// Login Form Handler
 const loginForm = document.getElementById('loginForm');
 if (loginForm) {
     loginForm.addEventListener('submit', async function(e) {
@@ -28,7 +25,6 @@ if (loginForm) {
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         
-        // Desabilitar botão e mostrar loading
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Entrando...';
         
@@ -38,24 +34,20 @@ if (loginForm) {
             remember: document.getElementById('remember')?.checked || false
         };
         
-        // Fazer login
         const result = await loginUser(formData.email, formData.password, formData.remember);
         
         if (result.success) {
-            // Sucesso - redirecionar
             showMessage('Login realizado com sucesso!', 'success');
             setTimeout(() => {
                 window.location.href = 'menu.html';
             }, 1000);
         } else {
-            // Erro - mostrar mensagem
             showMessage(result.error, 'error');
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
         }
     });
     
-    // Google Sign-In
     const googleBtn = document.querySelector('.btn-google');
     if (googleBtn) {
         googleBtn.addEventListener('click', async function(e) {
@@ -81,7 +73,6 @@ if (loginForm) {
     }
 }
 
-// Register Form Handler
 const registerForm = document.getElementById('registerForm');
 if (registerForm) {
     registerForm.addEventListener('submit', async function(e) {
@@ -115,11 +106,9 @@ if (registerForm) {
             return;
         }
         
-        // Desabilitar botão
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Criando conta...';
         
-        // Registrar usuário
         const result = await registerUser(userData.email, password, userData);
         
         if (result.success) {
@@ -134,7 +123,6 @@ if (registerForm) {
         }
     });
     
-    // Google Sign-In no registro
     const googleBtn = document.querySelector('.btn-google');
     if (googleBtn) {
         googleBtn.addEventListener('click', async function(e) {
@@ -160,7 +148,6 @@ if (registerForm) {
     }
 }
 
-// Recover Password Form Handler
 const recoverForm = document.getElementById('recoverForm');
 if (recoverForm) {
     recoverForm.addEventListener('submit', async function(e) {
@@ -171,11 +158,9 @@ if (recoverForm) {
         
         const email = document.getElementById('email').value;
         
-        // Desabilitar botão
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
         
-        // Enviar email de recuperação
         const result = await resetPassword(email);
         
         if (result.success) {
@@ -191,7 +176,6 @@ if (recoverForm) {
     });
 }
 
-// Phone mask
 const phoneInput = document.getElementById('phone');
 if (phoneInput) {
     phoneInput.addEventListener('input', function(e) {
@@ -206,15 +190,12 @@ if (phoneInput) {
     });
 }
 
-// Mostrar mensagem de feedback
 function showMessage(message, type = 'info') {
-    // Remover mensagem antiga se existir
     const oldMessage = document.querySelector('.auth-message');
     if (oldMessage) {
         oldMessage.remove();
     }
     
-    // Criar nova mensagem
     const messageEl = document.createElement('div');
     messageEl.className = `auth-message ${type}`;
     messageEl.innerHTML = `
@@ -222,12 +203,10 @@ function showMessage(message, type = 'info') {
         <span>${message}</span>
     `;
     
-    // Adicionar no topo do form
     const authForm = document.querySelector('.auth-form');
     if (authForm) {
         authForm.insertBefore(messageEl, authForm.firstChild);
         
-        // Auto-remover após 5 segundos
         setTimeout(() => {
             messageEl.remove();
         }, 5000);
